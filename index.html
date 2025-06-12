@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manvitha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Manvitha</h1>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="darkToggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="section home">
+      <div class="intro">
+        <img src="profile.jpg" alt="Profile" class="profile-pic" />
+        <h2>Hi, I'm Manvitha</h2>
+        <p>Aspiring Full Stack Developer</p>
+      </div>
+    </section>
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>I’m a passionate developer skilled in Java full stack technologies, currently looking for entry-level software development opportunities.</p>
+      <ul>
+        <li><strong>Education:</strong> B.Tech in CSE</li>
+        <li><strong>Hobbies:</strong> Dance, Web Development, Problem Solving</li>
+      </ul>
+    </section>
+    <section id="projects" class="section projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="todo-app.png" alt="To-Do App" />
+          <h3>To-Do List App</h3>
+          <p>Built with HTML, CSS, JavaScript to manage daily tasks with dark mode support.</p>
+        </div>
+        <div class="project-card">
+          <img src="portfolio.png" alt="Portfolio" />
+          <h3>Portfolio Website</h3>
+          <p>Responsive personal website showcasing my resume, projects, and contact form.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input type="text" id="subject" placeholder="Subject" required />
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <div id="form-status" class="hidden">✅ Message Sent!</div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Manvitha. All rights reserved.</p>
+    <a href="resume.pdf" target="_blank">Download Resume</a>
+  </footer>
+</body>
+</html>
